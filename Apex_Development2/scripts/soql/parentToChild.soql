@@ -1,0 +1,4 @@
+SELECT Name, AccountNumber, Rating, Industry, CreatedDate,
+   (SELECT FirstName FROM Contacts),
+   (SELECT Amount, Name ,CloseDate FROM Opportunities)
+FROM Account
